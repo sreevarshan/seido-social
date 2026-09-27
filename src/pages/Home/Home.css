@@ -1,0 +1,892 @@
+/* ==========================================================================
+   HOMEPAGE STYLES
+   ========================================================================== */
+
+/* What We Do Section */
+.section-what-we-do {
+  padding: 7rem 0 6rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.pillars-showcase-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+/* Flagship Pillar Card (50% Focus) */
+.pillar-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.pillar-flagship {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-card);
+}
+
+.pillar-card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.pillar-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pillar-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pillar-number {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.pillar-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.pillar-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.pillar-subservices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.pillar-service-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all var(--transition-fast);
+}
+
+.pillar-service-link:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.pillar-service-tag-static {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.subservice-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.pillar-flagship-media {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+}
+
+.pillar-flagship-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-flagship:hover .pillar-flagship-img {
+  transform: scale(1.03);
+}
+
+/* Secondary Pillars Grid (3 Verticals) */
+.secondary-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.secondary-pillar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.secondary-pillar-card:hover {
+  border-color: var(--border-prominent);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.pillar-tags-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.pillar-chip {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.pillar-inline-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: auto;
+}
+
+.pillar-inline-cta:hover {
+  text-decoration: underline;
+}
+
+/* Who We Work With */
+.section-who-we-work-with {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.audience-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-top: 3.5rem;
+}
+
+.audience-card {
+  padding: 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: all var(--transition-normal);
+}
+
+.audience-card:hover {
+  border-color: var(--border-prominent);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.audience-card-span {
+  grid-column: span 2;
+}
+
+.audience-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+
+.audience-category-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.audience-group-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.audience-group-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Flagship Personal Branding Section */
+.section-flagship-branding {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.flagship-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.flagship-editorial-visual {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-card);
+}
+
+.flagship-editorial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flagship-quote-badge {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(18, 18, 20, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  color: #FFFFFF;
+}
+
+.flagship-quote-badge p {
+  color: #E4E4E7;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.quote-mark {
+  color: var(--accent);
+  font-size: 2rem;
+  line-height: 1;
+  display: block;
+}
+
+.flagship-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flagship-intro-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.flagship-pillars-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.flagship-pillar-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.flagship-pillar-row:hover {
+  border-color: var(--accent-border);
+  transform: translateX(4px);
+}
+
+.flagship-step-index {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--accent);
+  padding-top: 0.15rem;
+}
+
+.flagship-step-info h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.flagship-step-info p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* Political Personal Branding */
+.section-political-branding {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.political-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.political-media-side {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+}
+
+.political-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.political-content-side {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.political-description {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.political-tenets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.tenet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.tenet-check {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.political-cta-btn {
+  align-self: flex-start;
+}
+
+/* E-Commerce Section */
+.section-ecommerce-feature {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.ecommerce-feature-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.ecommerce-text-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ecommerce-workflow-pills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin: 1rem 0;
+}
+
+.wf-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.15rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.wf-num {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.ecommerce-visual-side {
+  width: 100%;
+}
+
+.mockup-frame {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-card);
+}
+
+.mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mockup-overlay-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(18, 18, 20, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mockup-status {
+  font-size: 0.78rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Drone Media Section */
+.section-drone-media {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.drone-cinematic-banner {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: 3.5rem 0 2rem;
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-card);
+}
+
+.drone-cinematic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.drone-cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem;
+}
+
+.drone-categories-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.drone-category-box {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cat-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.drone-category-box h4 {
+  color: #FFFFFF;
+  font-size: 1.15rem;
+}
+
+.drone-category-box p {
+  color: #D4D4D8;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.drone-cta-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Influencer Feature Section */
+.section-influencer-feature {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.influencer-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.influencer-visual-wrap {
+  width: 100%;
+  height: 440px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+}
+
+.influencer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.influencer-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.influencer-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.influencer-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.influencer-service-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.inf-num {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* Selected Work Section */
+.section-selected-work {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.portfolio-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.filter-pill-btn {
+  padding: 0.5rem 1.15rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.filter-pill-btn:hover {
+  border-color: var(--border-medium);
+  color: var(--text-primary);
+}
+
+.filter-pill-btn.is-active {
+  background: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+  box-shadow: 0 2px 10px var(--accent-glow);
+}
+
+.portfolio-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Why Seido Social */
+.section-why-seido {
+  padding: 7rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.why-seido-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  margin-top: 3.5rem;
+}
+
+.why-card {
+  padding: 2.5rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: all var(--transition-normal);
+}
+
+.why-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.why-index {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.why-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.why-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Final CTA Section */
+.section-final-cta {
+  padding: 8rem 0 3rem;
+}
+
+.final-cta-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 6rem 3rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+}
+
+.cta-gradient-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 250px;
+  background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.final-cta-title {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 1.5rem auto 1.25rem;
+  max-width: 800px;
+}
+
+.final-cta-subtitle {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.final-cta-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.cta-action-btn {
+  padding: 1.15rem 2.4rem;
+  font-size: 1.02rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pillar-flagship {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .secondary-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .flagship-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .flagship-editorial-visual {
+    height: 420px;
+  }
+  .political-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .political-media-side {
+    min-height: 320px;
+  }
+  .political-content-side {
+    padding: 2.5rem 1.75rem;
+  }
+  .ecommerce-feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .drone-categories-strip {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .drone-cinematic-banner {
+    height: auto;
+    min-height: 600px;
+  }
+  .influencer-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-seido-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .audience-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .audience-card-span {
+    grid-column: span 1;
+  }
+  .ecommerce-workflow-pills {
+    grid-template-columns: 1fr;
+  }
+  .political-tenets-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-seido-grid {
+    grid-template-columns: 1fr;
+  }
+  .final-cta-card {
+    padding: 4rem 1.5rem;
+  }
+  .final-cta-action-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-action-btn {
+    width: 100%;
+  }
+}
